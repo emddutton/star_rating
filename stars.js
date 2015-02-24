@@ -13,8 +13,9 @@ $(document).ready(function(){
     });
     $('#box').on('click', ".star", function(){
         var stars = $(".star").prevAll().addBack();
-        $(this).prevAll().addBack().addClass('highlight');
         stars.off('mouseleave');
+        stars.off('mouseenter');
+        $(this).prevAll().addBack().addClass('highlight');
     });
 
 
