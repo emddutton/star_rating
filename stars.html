@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>highlighting stars</title>
+    <style>
+        #box {
+            margin: 50px auto;
+            text-align: center;
+            width: 60%;
+            height: 500px;
+        }
+        .star {
+            background-image: url("outline-star.png");
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+            margin: 200px 0;
+            display: inline-block;
+            background-color: grey;
+
+        }
+        .highlight, .selected {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="stars.js"></script>
+</body>
+</html>
